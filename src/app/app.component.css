@@ -5,6 +5,23 @@ html{
 body{
     margin: 0;
 }
+.active-top{
+    color:#60cbac!important;
+    border-top: 2px solid  #60cbac!important;
+}
+.active-bottom{
+    color:#60cbac!important;
+    border-bottom: 2px solid  #60cbac!important;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color: #e3e3e3;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .main{
     margin: 0;
     width: 100%;
@@ -21,12 +38,64 @@ body{
     justify-content: center;
 }
 .containerNavbar{
-    width: 1170px;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width: 1080px) {
+    .containerNavbar{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu a span{
+        display: none;
+    }
+    .creativeFeatures{
+        width: 90%!important;
+    }
+    .aboutContentHyperText a{
+        margin-right: 5px!important;
+    }
+    .aboutContainer{
+        width: 100%!important;
+        justify-content: center!important;
+    }
+    .aboutContainer .header{
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .aboutContainer .aboutContentHyperText{
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .aboutContent{
+        width: 100%!important;
+        justify-content: center;
+        align-items: center;
+    }
+    .empty{
+        display: none;
+    }
+    .ourContent{
+        width: 90%!important;
+        justify-content: center!important;
+    }
+    .hyperText a{
+        height: 30px!important;
+        width: 50px!important;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 10px!important;
+        background-color: white;
+        color: #60cbac;
+    }
+   }
 .menu{
     width: 60%;
     display: flex;
@@ -34,10 +103,27 @@ body{
     align-items: center;
     height: 100%;
 }
-.menu a{
-    text-decoration: none;
-    color: #e3e3e3;
-    font-weight: bold;
+
+.menu a:hover{
+    color:#60cbac;
+    border-bottom: 2px solid  #60cbac;
+   
+}
+
+.menu .active{
+    color:#60cbac;
+    border-bottom: 2px solid  #60cbac;
+
+}
+.menu button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 25px;
+    width: 25px;
+    color: rgb(167, 55, 55);
+    background: url("../assets/search.png") no-repeat scroll 0 0 transparent;
+    background-size: cover;
 }
 /* HOME */
 .home{
@@ -83,6 +169,24 @@ body{
     width: 20%;
     display: flex;
     justify-content: space-evenly;
+}
+.helloFootButtons button{
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    border-top: 2px solid white;
+
+}
+.butGreen{
+    background-color: #60cbac;
+}
+.butBlue{
+    background-color: #59c9f0;
 }
 .slider{
     width: 100px;
@@ -132,11 +236,240 @@ body{
     justify-content: center;
 }
 .serviceDark{
+    border-top: 4px solid #60cbac;
     background-color: #1e2a32;
     color: #60cbac;
     
 }
 .serviceGreen{
+    border-top: 4px solid white;
     background-color: #60cbac;
     color: white;
 }
+/*FEATURES*/
+.creativeFeatures{
+    display: flex;
+    width: 60%;
+    margin-top: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff ;
+}
+.headerCAF{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.header h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1 h1{
+    width: 100px;
+    height: 10px;
+    margin: 0;
+    border-bottom: 5px solid #60cbac;
+    border-bottom-left-radius: 50px 5px;
+    border-bottom-right-radius: 50px 5px;
+}
+.featuresContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.features{
+width: 25%;
+flex-grow: 1;
+margin: 40px
+}
+.featuresHeaders{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.featuresHeaders h1
+{
+    color: #60cbac;
+    margin: 0;
+    margin-right: 10px;
+}
+.featuresHeaders .active{
+    color: #60cbac;
+}
+/*ABOUT OUR COMPANY*/
+.aboutOurCompany{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    color: white;
+    background-color: black;
+}
+.aboutOurCompany .empty{
+    width: 50%;
+    height: 100%;
+}
+.aboutOurCompany .empty div{
+    height: 12.5%;
+}
+.aboutContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.aboutContainer a:hover{
+    
+        color:#60cbac;
+        border-top: 2px solid  #60cbac;
+       
+    
+}
+.aboutContentHyperText{
+    display: flex;
+    justify-content: left;
+   
+}
+.aboutContentHyperText a{
+    margin: 5px;
+    margin-right: 50px;
+}
+
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+}
+.aboutContainer .header{
+    display: flex;
+    justify-content: left;
+}
+.aboutContent div{
+    display: flex;
+    border: 1px solid gray;
+    margin:5px;
+    width: 60%;
+    height: 12%;
+    justify-self: center;
+}
+.aboutContent div span{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.aboutContent div span h5{
+    display: flex;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    height: 100%;
+    align-items: center;
+}
+.purple{
+    background-color: #9362a0;
+}
+.blue{
+background-color: #4eaed6;
+}
+.orange{
+background-color: #ca8480;
+}
+.green{
+background-color: #58ba9e;
+}
+.yelow{
+background-color: #b58c46;
+}
+.precent-80{
+    width: 80%;
+    
+}
+.precent-70{
+    width: 70%;
+
+}
+.precent-90{
+    width: 90%;
+
+}
+.precent-85{
+    width: 85%;
+
+}
+.precent-65{
+    width: 65%;
+
+}
+
+.OurAmaizingWork{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourContent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 60%;
+    background-color: #29403d;
+    margin: 40px;
+    border: 1px solid #bbd3cd;
+}
+.use{
+    border-top: solid 2px #60cbac;
+    background-color: white;
+}
+.use h2,h3{
+    color:#60cbac;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 33%;
+}
+.grey{
+    background-color: gray;
+}
+
+.hyperText{
+    display: flex;
+
+}
+.hyperText a{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    background-color: white;
+    color: #60cbac ;
+    
+}
+/*OUR AMAIZING WORK*/
+.OurAmaizingWork a:hover{
+   
+        color:#60cbac;
+        border-top: 2px solid  #60cbac;
+       
+   
+}
+.OurAmaizingWork button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background-color: #60cbac;
+    color: white;
+    height: 50PX;
+    width: 100px;
+    
+}
+
