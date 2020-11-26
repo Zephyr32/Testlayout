@@ -246,6 +246,9 @@ a{
     background-color: #60cbac;
     color: white;
 }
+.serviceDark,.serviceGreen h6{
+    text-align: center;
+}
 /*FEATURES*/
 .creativeFeatures{
     display: flex;
