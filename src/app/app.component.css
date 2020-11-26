@@ -300,6 +300,11 @@ margin: 40px
     margin: 0;
     margin-right: 10px;
 }
+.featuresHeaders span
+{
+    font-weight: 500;
+    font-size: 18px;
+}
 .featuresHeaders .active{
     color: #60cbac;
 }
